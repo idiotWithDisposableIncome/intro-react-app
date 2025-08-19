@@ -11,7 +11,7 @@ function Header() {
 }
 
 function Body() {
-  const images = Array.from({ length: 12 }, (_, i) => `/images/car${i + 1}.jpg`)
+  const images = Array.from({ length: 12 }, (_, i) => `${base}/images/car${i + 1}.jpg`)
   const [current, setCurrent] = useState(0)
   const [paused, setPaused] = useState(false)
 
